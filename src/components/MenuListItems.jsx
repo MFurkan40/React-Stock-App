@@ -43,11 +43,11 @@ const icons = [
     icon: <InventoryIcon />,
     url: "/stock/products/",
   },
-  {
-    title: "Admin Panel",
-    icon: <SupervisorAccountIcon />,
-    url: `${process.env.REACT_APP_API_URL}admin`,
-  },
+  // {
+  //   title: "Admin Panel",
+  //   icon: <SupervisorAccountIcon />,
+  //   url: `${process.env.REACT_APP_API_URL}admin`,
+  // },
 ];
 
 const iconStyle = {

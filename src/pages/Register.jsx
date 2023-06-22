@@ -13,6 +13,7 @@ import useAuthCalls from "../hooks/useAuthCalls";
 
 const Register = () => {
   const { register } = useAuthCalls();
+  const [color, setColor] = useState("black");
 
   return (
     <Container maxWidth="lg">
@@ -69,7 +70,14 @@ const Register = () => {
             component={(props) => <RegisterForm {...props} />}
           ></Formik>
           <Box sx={{ textAlign: "center", mt: 2 }}>
-            <Link to="/">Do you have an account?</Link>
+            <Link
+              style={{ textDecoration: "none", color: `${color}` }}
+              onMouseEnter={() => setColor("blue")}
+              onMouseLeave={() => setColor("black")}
+              to="/login"
+            >
+              Do you have an account?
+            </Link>
           </Box>
         </Grid>
 

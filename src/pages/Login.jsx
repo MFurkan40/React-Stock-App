@@ -14,10 +14,7 @@ import useAuthCalls from "../hooks/useAuthCalls";
 
 const Login = () => {
   const { login } = useAuthCalls();
-
-  const log = process.env.REACT_APP_API_URL;
-
-  console.log(log);
+  const [color, setColor] = useState("black");
 
   return (
     <Container maxWidth="lg">
@@ -67,7 +64,14 @@ const Login = () => {
             component={(props) => <LoginForm {...props} />}
           ></Formik>
           <Box sx={{ textAlign: "center", mt: 2 }}>
-            <Link to="/register">Do you have not an account?</Link>
+            <Link
+              to="/register"
+              style={{ textDecoration: "none", color: `${color}` }}
+              onMouseEnter={() => setColor("blue")}
+              onMouseLeave={() => setColor("black")}
+            >
+              Do you have not an account?
+            </Link>
           </Box>
         </Grid>
 
