@@ -30,6 +30,6 @@ npm start or yarn start
 - Live App: https://stock-app123.netlify.app/
 
 ## App View
-username: admin@gmail.com
-password: admin
+- Username: admin@gmail.com
+- Password: admin
 ![Stock App](stock-app.gif)
