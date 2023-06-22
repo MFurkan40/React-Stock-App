@@ -31,5 +31,5 @@ npm start or yarn start
 
 ## App View
 - Username: admin@gmail.com
-- Password: admin
+- Password: Try123try.
 ![Stock App](stock-app.gif)
