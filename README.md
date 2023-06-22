@@ -27,6 +27,8 @@ npm install or yarn
 npm start or yarn start
 ```
 
-- Live App:
+- Live App: https://stock-app123.netlify.app/
 
 ## App View
+
+![Stock App](stock-app.gif)

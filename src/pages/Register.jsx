@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 
 import useAuthCalls from "../hooks/useAuthCalls";
+import { useState } from "react";
 
 const Register = () => {
   const { register } = useAuthCalls();

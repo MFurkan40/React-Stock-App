@@ -1,4 +1,3 @@
-import React from "react";
 import { MultiSelectBox, MultiSelectBoxItem } from "@tremor/react";
 import { flexCenter } from "../styles/globalStyle";
 import Box from "@mui/material/Box";

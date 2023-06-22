@@ -1,5 +1,3 @@
-import * as React from "react";
-import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
@@ -16,6 +14,7 @@ import useAuthCalls from "../hooks/useAuthCalls";
 import { useSelector } from "react-redux";
 import { Outlet } from "react-router-dom";
 import { Container } from "@mui/material";
+import { useState } from "react";
 
 const drawerWidth = 200;
 
@@ -24,7 +23,7 @@ function Dashboard(props) {
   const { logout } = useAuthCalls();
 
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);

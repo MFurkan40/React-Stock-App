@@ -1,4 +1,3 @@
-import React from "react";
 import { LineChart } from "@tremor/react";
 import { Card, Grid, Typography } from "@mui/material";
 import { useSelector } from "react-redux";

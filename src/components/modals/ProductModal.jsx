@@ -1,4 +1,3 @@
-import React from "react";
 import { flexColumn, modalStyle } from "../../styles/globalStyle";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
